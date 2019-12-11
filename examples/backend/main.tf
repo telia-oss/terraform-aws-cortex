@@ -1,5 +1,5 @@
 module "cortex" {
-  source = "../modules/cortex"
+  source = "../../modules/cortex"
 
   prefix                                     = "cortex"
   subdomain                                  = data.terraform_remote_state.template.outputs.subdomain
