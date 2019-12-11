@@ -1,5 +1,6 @@
 module "cortex_table_manager" {
-  source                            = "github.com/telia-oss/terraform-aws-ecs-fargate.git?ref=add-no-load-balancer-support"
+  source = "github.com/telia-oss/terraform-aws-ecs-fargate.git?ref=add-no-load-balancer-support"
+
   name_prefix                       = "cortex-table-manager"
   vpc_id                            = var.vpc_id
   cluster_id                        = aws_ecs_cluster.cortex.id

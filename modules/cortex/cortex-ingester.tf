@@ -1,7 +1,5 @@
 module "cortex_ingester" {
-  source = "../terraform-aws-ecs-timeout//modules/service"
-  # source  = "telia-oss/ecs/aws//modules/service"
-  # version = "2.1.0"
+  source = "git@github.com:telia-oss/terraform-aws-ecs.git//modules/service?ref=enable-network-mode-awsvpc"
 
   name_prefix                       = "cortex-ingester"
   vpc_id                            = var.vpc_id
